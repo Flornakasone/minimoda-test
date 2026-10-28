@@ -33,15 +33,17 @@
   No inventes mensajes: si no sabés el texto exacto, marcalo "A VERIFICAR".
   ```
 - Qué devolvió:
-Una tabla con reglas visibles, datos válidos, datos inválidos y valores límite para los 7 campos: contraseña de mínimo 8 caracteres y edad entre 13 y 120.
+  - Una tabla con reglas visibles, datos válidos, datos inválidos y valores límite para los 7 campos: contraseña de mínimo 8 caracteres y edad entre 13 y 120.
   - 6 casos de prueba: registro exitoso, contraseñas que no coinciden, contraseña de 7 caracteres, edad 12, edad 120 y términos sin aceptar.
   - Cada caso con título, precondiciones, pasos, resultado esperado, prioridad y tipo (functional, negative y boundary).
+  - En el caso de contraseña de 7 caracteres dio el mensaje "La contraseña debe tener al menos 8 caracteres." sin marcarlo A VERIFICAR, como pedía el prompt. El texto coincide con la página, pero no indica de dónde lo sacó.
 
 ## 5. Otra superficie: comparación en 3 líneas
 Comparación con Claude app (Sonnet 5.5), con acceso web
 1. Claude separa "regla visible" de "sin regla visible (A VERIFICAR)" y Gemini solo pone A VERIFICAR en algunos resultados esperados.
 2. En datos concretos en los pasos, en Gemini los casos 3, 4, 5 y 6 dicen "completar el resto con datos válidos" y por el otro Claude especifica "completar los datos válidos del TC-01".
 3. Claude y Gemini leyeron bien la página. Como cierre, Claude ofrece abrir el navegador y ejecutar los casos y Gemini profundizar en otro escenario de prueba o armar scripts de automatización.
+> Nota: corrí el mismo prompt en Gemini web (gemini.google.com) sin la página abierta. Inventó reglas que no están en el sitio: edad mínima de 18 años, contraseña de "6 u 8" caracteres y la opción "Seleccione un país". Con la página abierta (Gemini en Chrome) acertó, así que el contexto que recibe la IA pesa más que la herramienta.
 
 ## 6. Mis 3 mejores casos (cargados en Qase, proyecto MiniModa)
 Formato del título: `Registro: <qué se prueba>`
