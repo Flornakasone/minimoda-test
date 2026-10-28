@@ -47,23 +47,47 @@ Comparación con Claude app (Sonnet 5.5), con acceso web
 Formato del título: `Registro: <qué se prueba>`
 Captura de la suite en Qase con tus casos: `evidencias/qase-suite-casos.png`
 
-### Caso 1: ___tu respuesta aquí___
-- Precondiciones: ___tu respuesta aquí___
-- Pasos: ___tu respuesta aquí___
-- Resultado esperado: ___tu respuesta aquí___
-- Evidencia: `evidencias/qase-MM-4-registro-alta-exitosa.png`
+### Caso 1: Registro: Creación de cuenta exitosa con datos válidos
+- Precondiciones: El usuario se encuentra en https://minimoda-navy.vercel.app/registro y el email qa01@example.com no está registrado.
+- Pasos:
+  1. Ingresar "Ana López" en el campo Nombre.
+  2. Seleccionar "Argentina" en el campo País.
+  3. Tildar la casilla "Acepto los términos y condiciones".
+  4. Ingresar "qa01@example.com" en el campo Email.
+  5. Ingresar "Clave12345" en el campo Contraseña.
+  6. Ingresar "Clave12345" en el campo Confirmar contraseña.
+  7. Ingresar "30" en el campo Edad.
+  8. Hacer clic en "Crear cuenta".
+- Resultado esperado: El sistema muestra el mensaje de éxito "¡Registro exitoso! Bienvenido/a a MiniModa, Ana López. Te enviamos un email de bienvenida (ver Bandeja)."
+- Evidencia: `evidencias/qase-MINIMODA-1-registro-exitoso.png`
 
-### Caso 2: ___tu respuesta aquí___
-- Precondiciones: ___tu respuesta aquí___
-- Pasos: ___tu respuesta aquí___
-- Resultado esperado: ___tu respuesta aquí___
-- Evidencia: `evidencias/qase-MM-5-registro-password-7.png`
+### Caso 2: Registro: Validación de contraseña debajo del mínimo (7 caracteres)
+- Precondiciones: El usuario se encuentra en la pantalla de https://minimoda-navy.vercel.app/registro
+- Pasos:
+  1. Ingresar "Ana López" en el campo Nombre.
+  2. Seleccionar "Argentina" en el campo País.
+  3. Tildar la casilla "Acepto los términos y condiciones".
+  4. Ingresar "qa02@example.com" en el campo Email.
+  5. Ingresar "Clave12" (7 caracteres) en el campo Contraseña.
+  6. Ingresar "Clave12" en el campo Confirmar contraseña.
+  7. Ingresar "30" en el campo Edad.
+  8. Hacer clic en "Crear cuenta".
+- Resultado esperado: El sistema bloquea el registro, no permite avanzar y muestra el mensaje "La contraseña debe tener al menos 8 caracteres."
+- Evidencia: `evidencias/qase-MINIMODA-2-registro-password-7.png`
 
-### Caso 3: ___tu respuesta aquí___
-- Precondiciones: ___tu respuesta aquí___
-- Pasos: ___tu respuesta aquí___
-- Resultado esperado: ___tu respuesta aquí___
-- Evidencia: `evidencias/qase-MM-6-registro-edad-12.png`
+### Caso 3: Registro: Validación del límite inferior de edad (12)
+- Precondiciones: El usuario se encuentra en la pantalla de https://minimoda-navy.vercel.app/registro
+- Pasos:
+  1. Ingresar "Ana López" en el campo Nombre.
+  2. Seleccionar "Argentina" en el campo País.
+  3. Tildar la casilla "Acepto los términos y condiciones".
+  4. Ingresar "qa03@example.com" en el campo Email.
+  5. Ingresar "Clave1234" en el campo Contraseña.
+  6. Ingresar "Clave1234" en el campo Confirmar contraseña.
+  7. Ingresar "12" en el campo Edad.
+  8. Hacer clic en "Crear cuenta".
+- Resultado esperado: El sistema rechaza el registro debido a la restricción de edad y muestra el mensaje "La edad debe estar entre 13 y 120."
+- Evidencia: `evidencias/qase-MINIMODA-3-registro-edad-12.png`
 
 ## 7. Mapa del harness
 | Pieza | En lo que usé |
