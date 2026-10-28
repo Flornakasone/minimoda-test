@@ -5,11 +5,11 @@
 > Así tiene que quedar tu entrega. Reemplazá cada `___tu respuesta aquí___` con lo tuyo.
 
 ## 1. Preparación
-- Navegador y fecha: ___tu respuesta aquí___
+- Navegador y fecha: Google Chrome Versión 156.0.8078.48, 28/10/2026
 
 ## 2. Superficie elegida
-- Elegí (chat o cowork): ___tu respuesta aquí___
-- Por qué: ___tu respuesta aquí___
+- Elegí (chat o cowork): Chat (Gemini)
+- Por qué: Es más sencillo y práctico porque Gemini ya está disponible en el navegador, mientras que Cowork requiere descarga y configuración previa de accesos.
 
 ## 3. Preguntas a Gemini
 | # | Pregunta | Respuesta (resumen) | ¿Acierto o error/invento? |
