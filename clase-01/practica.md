@@ -14,12 +14,12 @@
 ## 3. Preguntas a Gemini
 | # | Pregunta | Respuesta (resumen) | ¿Acierto o error/invento? |
 |---|----------|---------------------|---------------------------|
-| 1 | ¿Qué campos pide el formulario de registro de https://minimoda-navy.vercel.app/registro? | ___tu respuesta aquí___ | ___tu respuesta aquí___ |
-| 2 | ¿Cuál es el largo mínimo de la contraseña y qué edad se permite? | ___tu respuesta aquí___ | ___tu respuesta aquí___ |
-| 3 | ¿Qué pasa si no acepto los términos? | ___tu respuesta aquí___ | ___tu respuesta aquí___ |
+| 1 | ¿Qué campos pide el formulario de registro de https://minimoda-navy.vercel.app/registro? |Responde con los campos que se solicitan: Nombre, Email, Contraseña, Confirmar contraseña, Edad, País, Términos junto con su descripción si la poseen | Acierto |
+| 2 | ¿Cuál es el largo mínimo de la contraseña y qué edad se permite? | Responde que la contraseña requiere un mínimo de 8 caracteres y la edad permitida debe ser un número entero entre 13 y 120 años | Acierto |
+| 3 | ¿Qué pasa si no acepto los términos? | Responde que al no aceptar, no permitirá avanzar ya que es un campo obligatorio| Acierto parcial |
 
-- Un acierto: ___tu respuesta aquí___
-- Un error o invento: ___tu respuesta aquí___
+- Un acierto: En el primer caso, cumple la respuesta detallando cada campo de la solicitud a completar y corresponde a lo del formulario
+- Un error o invento: No hubo errores ni inventos, lo más cercano fue que Gemini no menciona que aparezca el mensaje de 'Debés aceptar los términos.' al no tildarlo y presionar el botón de 'Crear cuenta'.
 
 ## 4. Primer modo
 - Superficie y modo: ___tu respuesta aquí___
