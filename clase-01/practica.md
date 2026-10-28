@@ -92,11 +92,11 @@ Captura de la suite en Qase con tus casos: `evidencias/qase-suite-casos.png`
 ## 7. Mapa del harness
 | Pieza | En lo que usé |
 |-------|---------------|
-| Modelo | ___tu respuesta aquí___ |
-| App | ___tu respuesta aquí___ |
-| Harness | ___tu respuesta aquí___ |
-| MCP | ___tu respuesta aquí___ |
-| Skill | ___tu respuesta aquí___ |
+| Modelo | Gemini: modo Automático (Gemini 3) / Claude: Sonnet 5.5 |
+| App | Gemini en Chrome / Claude app |
+| Harness | Los dos tuvieron acceso a la página de MiniModa para leerla |
+| MCP | No usé. Claude ofreció usar la extensión de Chrome (MCP) para ejecutar los casos |
+| Skill | No usé |
 
 ## 8. Entrega
-- Link de tu repo (pegalo también en el Telegram): ___tu respuesta aquí___
+- Link de tu repo (pegalo también en el Telegram): https://github.com/Flornakasone/minimoda-test
