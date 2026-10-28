@@ -8,7 +8,7 @@
 - Navegador y fecha: Google Chrome Versión 156.0.8078.48, 28/10/2026
 
 ## 2. Superficie elegida
-- Elegí (chat o cowork): Chat (Gemini)
+- Elegí (chat o cowork): Chat (Gemini en Navegador Chrome)
 - Por qué: Es más sencillo y práctico porque Gemini ya está disponible en el navegador, mientras que Cowork requiere descarga y configuración previa de accesos.
 
 ## 3. Preguntas a Gemini
@@ -22,7 +22,7 @@
 - Un error o invento: No hubo errores ni inventos, lo más cercano fue que Gemini no menciona que aparezca el mensaje de 'Debés aceptar los términos.' al no tildarlo y presionar el botón de 'Crear cuenta'.
 
 ## 4. Primer modo
-- Superficie y modo: ___tu respuesta aquí___
+- Superficie y modo: Gemini en Navegador Chrome - Modo Automático (Modelos de Gemini3)
 - Prompt de ejemplo:
   ```
   Sos QA. Vamos a probar el registro de https://minimoda-navy.vercel.app/registro
@@ -32,12 +32,16 @@
      resultado esperado, prioridad (high/medium/low) y tipo (functional/negative/boundary).
   No inventes mensajes: si no sabés el texto exacto, marcalo "A VERIFICAR".
   ```
-- Qué devolvió: ___tu respuesta aquí___
+- Qué devolvió:
+Una tabla con reglas visibles, datos válidos, datos inválidos y valores límite para los 7 campos: contraseña de mínimo 8 caracteres y edad entre 13 y 120.
+  - 6 casos de prueba: registro exitoso, contraseñas que no coinciden, contraseña de 7 caracteres, edad 12, edad 120 y términos sin aceptar.
+  - Cada caso con título, precondiciones, pasos, resultado esperado, prioridad y tipo (functional, negative y boundary).
 
 ## 5. Otra superficie: comparación en 3 líneas
-1. ___tu respuesta aquí___
-2. ___tu respuesta aquí___
-3. ___tu respuesta aquí___
+Comparación con Claude app (Sonnet 5.5), con acceso web
+1. Claude separa "regla visible" de "sin regla visible (A VERIFICAR)" y Gemini solo pone A VERIFICAR en algunos resultados esperados.
+2. En datos concretos en los pasos, en Gemini los casos 3, 4, 5 y 6 dicen "completar el resto con datos válidos" y por el otro Claude especifica "completar los datos válidos del TC-01".
+3. Claude y Gemini leyeron bien la página. Como cierre, Claude ofrece abrir el navegador y ejecutar los casos y Gemini profundizar en otro escenario de prueba o armar scripts de automatización.
 
 ## 6. Mis 3 mejores casos (cargados en Qase, proyecto MiniModa)
 Formato del título: `Registro: <qué se prueba>`
