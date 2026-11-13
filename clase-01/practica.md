@@ -108,7 +108,7 @@ Orden de los pasos: igual al de los campos del formulario (Nombre, Email, Contra
   7. Dejar sin tildar la casilla "Acepto los términos y condiciones".
   8. Hacer clic en "Crear cuenta".
 - Resultado esperado: El sistema bloquea el registro, no crea la cuenta y muestra el mensaje "Debés aceptar los términos."
-- Evidencia: `evidencias/qase-MINIMODA-4-registro-sin-terminos.png` (pendiente: cargar el caso en Qase, ejecutarlo y sacar la captura)
+- Evidencia: `evidencias/qase-MINIMODA-4-registro-sin-terminos.png`
 
 ## 7. Mapa del harness
 | Pieza | En lo que usé |
